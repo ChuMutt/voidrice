@@ -7,13 +7,16 @@
 
 # Adds `~/.local/bin` to $PATH
 export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
-
 unsetopt PROMPT_SP
+# Chu's changes
+# steel bank common list core lisp image location
+export SBCL_HOME="/usr/lib64/sbcl"
+#export DOOMDIR="~/doom-emacs"
 
 # Default programs:
 export EDITOR="nvim"
 export TERMINAL="st"
-export BROWSER="brave"
+export BROWSER="firefox"
 
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"
